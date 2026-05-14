@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Brio Health & Info Services — AI and IT automation solutions for Insurance Agencies and Bike Dealerships in India." />
+  <title>Brio Health & Info Services | AI & IT Solutions</title>
+  <link rel="icon" type="image/png" href="assets/logo.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ── CANVAS PARTICLE BG ── -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- ── NAVBAR ── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <img src="assets/logo.svg" alt="Brio Logo" class="logo-img" />
+        <span class="logo-text">Brio <span class="accent">Health & Info</span></span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#solutions">Solutions</a></li>
+        <li><a href="#industries">Industries</a></li>
+        <li><a href="#why-us">Why Us</a></li>
+        <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── HERO ── -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="pulse-dot"></span>
+        AI-Powered Insurance &amp; Dealership Automation
+      </div>
+      <h1 class="hero-title">
+        Intelligent Solutions<br />
+        for the <span class="gradient-text">Future of Business</span>
+      </h1>
+      <p class="hero-sub">
+        Brio Health &amp; Info Services delivers cutting-edge AI automation, Chrome extensions,
+        and intelligent agents that transform how Insurance Agencies and Bike Dealerships operate —
+        faster, smarter, and more profitably.
+      </p>
+      <div class="hero-actions">
+        <a href="#solutions" class="btn btn-primary">Explore Solutions</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-target="4">0</span>
+          <span class="stat-label">Core Products</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="2">0</span>
+          <span class="stat-label">Industry Verticals</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="100">0</span><span class="stat-suffix">%</span>
+          <span class="stat-label">AI-Driven</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="hero-card card-float">
+        <div class="hc-icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div>
+          <p class="hc-title">Brio Automation</p>
+          <p class="hc-sub">Chrome Extension Active</p>
+        </div>
+        <div class="hc-status"></div>
+      </div>
+      <div class="hero-card card-float-2">
+        <div class="hc-icon hc-icon--teal">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div>
+          <p class="hc-title">RSA Solution</p>
+          <p class="hc-sub">Policy Engine Running</p>
+        </div>
+        <div class="hc-status hc-status--teal"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── MARQUEE ── -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>Insurance Automation</span><span class="sep">✦</span>
+      <span>RSA Solutions</span><span class="sep">✦</span>
+      <span>Chrome Extension</span><span class="sep">✦</span>
+      <span>Bike Dealership AI</span><span class="sep">✦</span>
+      <span>Policy Generation</span><span class="sep">✦</span>
+      <span>Agent Automation</span><span class="sep">✦</span>
+      <span>Corporate Solutions</span><span class="sep">✦</span>
+      <span>Intelligent Workflows</span><span class="sep">✦</span>
+      <!-- duplicate for seamless loop -->
+      <span>Insurance Automation</span><span class="sep">✦</span>
+      <span>RSA Solutions</span><span class="sep">✦</span>
+      <span>Chrome Extension</span><span class="sep">✦</span>
+      <span>Bike Dealership AI</span><span class="sep">✦</span>
+      <span>Policy Generation</span><span class="sep">✦</span>
+      <span>Agent Automation</span><span class="sep">✦</span>
+      <span>Corporate Solutions</span><span class="sep">✦</span>
+      <span>Intelligent Workflows</span><span class="sep">✦</span>
+    </div>
+  </div>
+
+  <!-- ── ABOUT ── -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-label">Who We Are</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title">Built for the <span class="gradient-text">Digital Frontier</span></h2>
+          <p class="body-text">
+            Brio Health &amp; Info Services is a Gurugram-based technology partnership firm specialising
+            in AI-driven automation for India's insurance and two-wheeler dealership sectors.
+            We bridge the gap between traditional business operations and modern intelligent systems —
+            delivering tools that reduce manual effort, eliminate errors, and accelerate revenue growth.
+          </p>
+          <p class="body-text">
+            From our Brio Automation Chrome Extension that streamlines agent workflows at the browser level,
+            to enterprise-grade RSA and policy generation platforms, every product is designed with one
+            goal: <strong>make your team 10× more effective.</strong>
+          </p>
+          <div class="about-pills">
+            <span class="pill">Partnership Firm</span>
+            <span class="pill">Gurugram, India</span>
+            <span class="pill">Est. 2024</span>
+            <span class="pill">AI First</span>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="tech-card">
+            <div class="tc-header">
+              <span class="tc-dot red"></span>
+              <span class="tc-dot yellow"></span>
+              <span class="tc-dot green"></span>
+              <span class="tc-title-bar">brio_core.ai</span>
+            </div>
+            <div class="tc-body">
+              <p><span class="kw">const</span> brio = <span class="kw">new</span> <span class="fn">BrioAI</span>({</p>
+              <p class="indent">industry: [<span class="str">'insurance'</span>, <span class="str">'dealership'</span>],</p>
+              <p class="indent">ai: <span class="bool">true</span>,</p>
+              <p class="indent">automation: <span class="bool">true</span>,</p>
+              <p class="indent">region: <span class="str">'India'</span></p>
+              <p>});</p>
+              <br />
+              <p><span class="fn">brio</span>.<span class="method">deploy</span>(<span class="str">'solutions'</span>);</p>
+              <p class="comment">// ✓ Brio Automation Extension loaded</p>
+              <p class="comment">// ✓ RSA Engine initialised</p>
+              <p class="comment">// ✓ Policy AI ready</p>
+              <p class="comment">// ✓ Dealership agents online</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── SOLUTIONS ── -->
+  <section class="section section--dark" id="solutions">
+    <div class="container">
+      <div class="section-label">Our Products</div>
+      <h2 class="section-title center">Flagship <span class="gradient-text">Solutions</span></h2>
+      <p class="section-sub center">Four powerful products. One unified mission: automate what slows you down.</p>
+      <div class="solutions-grid">
+
+        <!-- Card 1 -->
+        <div class="sol-card" data-index="01">
+          <div class="sol-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <span class="sol-num">01</span>
+          <h3 class="sol-title">Brio Automation<br /><span>Chrome Extension</span></h3>
+          <p class="sol-desc">
+            A powerful browser-native automation tool built for insurance agents and dealership staff.
+            Automates repetitive form-filling, data extraction, portal navigation, and report generation
+            directly inside Chrome — no separate software required.
+          </p>
+          <ul class="sol-features">
+            <li>One-click policy data auto-fill</li>
+            <li>Portal scraping &amp; data sync</li>
+            <li>Custom workflow builder</li>
+            <li>Multi-portal compatibility</li>
+          </ul>
+          <div class="sol-tag">Browser Automation</div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="sol-card sol-card--accent" data-index="02">
+          <div class="sol-icon sol-icon--glow">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <span class="sol-num">02</span>
+          <h3 class="sol-title">RSA <span>Solution Platform</span></h3>
+          <p class="sol-desc">
+            A comprehensive Road Side Assistance management and insurance platform. Handles end-to-end RSA
+            policy issuance, claim triggers, service provider dispatch, and real-time status tracking
+            through an intelligent AI backbone.
+          </p>
+          <ul class="sol-features">
+            <li>Instant RSA policy issuance</li>
+            <li>Automated claim processing</li>
+            <li>Service provider network mgmt</li>
+            <li>Live GPS &amp; status tracking</li>
+          </ul>
+          <div class="sol-tag sol-tag--glow">RSA &amp; Insurance</div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="sol-card" data-index="03">
+          <div class="sol-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <span class="sol-num">03</span>
+          <h3 class="sol-title">Corporate Agency<br /><span>Policy Creation Suite</span></h3>
+          <p class="sol-desc">
+            An AI-powered policy generation platform for corporate insurance agencies. Automates the
+            creation, validation, and issuance of group and fleet policies — drastically reducing
+            TAT and eliminating manual errors.
+          </p>
+          <ul class="sol-features">
+            <li>AI-generated policy documents</li>
+            <li>Regulatory compliance checks</li>
+            <li>Bulk group policy processing</li>
+            <li>Digital signature &amp; e-dispatch</li>
+          </ul>
+          <div class="sol-tag">Policy Automation</div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="sol-card" data-index="04">
+          <div class="sol-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <span class="sol-num">04</span>
+          <h3 class="sol-title">Bike Dealership<br /><span>AI Agents &amp; Automation</span></h3>
+          <p class="sol-desc">
+            Intelligent AI agents purpose-built for two-wheeler dealerships. Automates lead management,
+            test-drive scheduling, finance application processing, registration workflows, and
+            post-sale insurance issuance in a single unified platform.
+          </p>
+          <ul class="sol-features">
+            <li>AI lead nurturing agent</li>
+            <li>Automated RC &amp; registration</li>
+            <li>Finance &amp; loan integration</li>
+            <li>Post-sale insurance linkage</li>
+          </ul>
+          <div class="sol-tag">Dealership AI</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── INDUSTRIES ── -->
+  <section class="section" id="industries">
+    <div class="container">
+      <div class="section-label">Verticals We Serve</div>
+      <h2 class="section-title center">Industries We <span class="gradient-text">Transform</span></h2>
+      <div class="industry-grid">
+
+        <div class="industry-card">
+          <div class="ind-bg ind-bg--insurance"></div>
+          <div class="ind-content">
+            <div class="ind-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z" stroke="currentColor" stroke-width="1.5"/><polyline points="9,22 9,12 15,12 15,22" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <h3>Insurance Agencies</h3>
+            <p>End-to-end automation for motor, health, and commercial lines. From quote to claim — Brio handles it all.</p>
+            <ul>
+              <li>Motor &amp; Health insurance</li>
+              <li>RSA &amp; add-on products</li>
+              <li>Corporate group policies</li>
+              <li>Agent productivity tools</li>
+            </ul>
+            <a href="#contact" class="ind-link">Learn More →</a>
+          </div>
+        </div>
+
+        <div class="industry-card">
+          <div class="ind-bg ind-bg--dealership"></div>
+          <div class="ind-content">
+            <div class="ind-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 2a10 10 0 100 20A10 10 0 0012 2z" stroke="currentColor" stroke-width="1.5"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Bike Dealerships</h3>
+            <p>Intelligent dealership management from first inquiry to delivery — powered by AI agents working 24/7.</p>
+            <ul>
+              <li>Lead &amp; CRM automation</li>
+              <li>Finance processing agents</li>
+              <li>Registration &amp; RC automation</li>
+              <li>Insurance bundling at POS</li>
+            </ul>
+            <a href="#contact" class="ind-link">Learn More →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── WHY US ── -->
+  <section class="section section--dark" id="why-us">
+    <div class="container">
+      <div class="section-label">Our Edge</div>
+      <h2 class="section-title center">Why Choose <span class="gradient-text">Brio</span></h2>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h4>Lightning Fast Deployment</h4>
+          <p>Our solutions go live in days, not months. Pre-built connectors for all major Indian insurance portals and DMS platforms.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h4>24/7 AI Agents</h4>
+          <p>Our AI agents never sleep. They process leads, generate policies, and handle customer queries round the clock.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h4>Enterprise-Grade Security</h4>
+          <p>Bank-level encryption, role-based access, and full audit trails keep your customer data safe and compliant.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="1.5"/><circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.5"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <h4>Domain Expertise</h4>
+          <p>Built by insurance and automotive veterans. We speak your industry's language and understand its unique compliance requirements.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h4>Real-Time Analytics</h4>
+          <p>Live dashboards give managers instant visibility into performance metrics, conversion rates, and operational bottlenecks.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.5"/><polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <h4>Dedicated Support</h4>
+          <p>Our Gurugram-based team provides hands-on onboarding, training, and ongoing support — we're always just a call away.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TECH STACK STRIP ── -->
+  <section class="tech-strip">
+    <div class="container">
+      <p class="tech-strip-label">Powered by modern AI &amp; cloud infrastructure</p>
+      <div class="tech-logos">
+        <div class="tech-logo"><span>GPT-4o</span></div>
+        <div class="tech-logo"><span>Gemini AI</span></div>
+        <div class="tech-logo"><span>Claude AI</span></div>
+        <div class="tech-logo"><span>Chrome APIs</span></div>
+        <div class="tech-logo"><span>Node.js</span></div>
+        <div class="tech-logo"><span>React</span></div>
+        <div class="tech-logo"><span>AWS Cloud</span></div>
+        <div class="tech-logo"><span>REST APIs</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-label">Get in Touch</div>
+      <h2 class="section-title center">Start Your <span class="gradient-text">Transformation</span></h2>
+      <p class="section-sub center">Ready to automate your business? Let's talk about what Brio can do for you.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Reach Us Directly</h3>
+          <div class="contact-item">
+            <div class="ci-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke="currentColor" stroke-width="1.5"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <div>
+              <p class="ci-label">Office Address</p>
+              <p class="ci-value">#1125, Sector-38,<br />Gurugram, Haryana — 122001</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <div>
+              <p class="ci-label">Phone</p>
+              <a href="tel:+919821003589" class="ci-value ci-link">+91 9821003589</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.5"/><polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <div>
+              <p class="ci-label">Email</p>
+              <a href="mailto:briohealthninfo@gmail.com" class="ci-value ci-link">briohealthninfo@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-badge">
+            <div class="pulse-dot pulse-dot--sm"></div>
+            <span>Available Mon–Sat, 9AM–7PM IST</span>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" placeholder="Your company" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@company.com" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 XXXXXXXXXX" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="interest">I'm interested in</label>
+            <select id="interest" name="interest">
+              <option value="">Select a solution…</option>
+              <option>Brio Automation Chrome Extension</option>
+              <option>RSA Solution Platform</option>
+              <option>Corporate Agency Policy Creation Suite</option>
+              <option>Bike Dealership AI Agents</option>
+              <option>Multiple Solutions</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us about your business and what you're looking to automate…"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            <span class="btn-text">Send Message</span>
+            <svg viewBox="0 0 24 24" fill="none" class="btn-arrow"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <p class="form-note">We'll get back to you within 24 business hours.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <img src="assets/logo.svg" alt="Brio Logo" class="logo-img" />
+            <span class="logo-text">Brio <span class="accent">Health &amp; Info</span></span>
+          </a>
+          <p class="footer-tagline">AI &amp; IT Solutions for Insurance &amp; Dealerships</p>
+          <p class="footer-reg">Registered Partnership Firm | GSTIN: Gurugram, Haryana</p>
+        </div>
+        <div class="footer-links">
+          <h5>Solutions</h5>
+          <ul>
+            <li><a href="#solutions">Brio Chrome Extension</a></li>
+            <li><a href="#solutions">RSA Solution</a></li>
+            <li><a href="#solutions">Policy Creation Suite</a></li>
+            <li><a href="#solutions">Dealership AI Agents</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h5>Company</h5>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#industries">Industries</a></li>
+            <li><a href="#why-us">Why Brio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h5>Contact</h5>
+          <p>#1125, Sector-38, Gurugram<br />Haryana — 122001</p>
+          <a href="tel:+919821003589">+91 9821003589</a>
+          <a href="mailto:briohealthninfo@gmail.com">briohealthninfo@gmail.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024–2026 Brio Health &amp; Info Services. All rights reserved.</p>
+        <p class="footer-credit">Crafted with precision in Gurugram, India</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
